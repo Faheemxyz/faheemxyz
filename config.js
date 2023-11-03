@@ -31,18 +31,18 @@ module.exports = {
   read_status : process.env.AUTO_READ_STATUS || 'false',
   save_status : process.env.AUTO_SAVE_STATUS || 'false',
   packname:  process.env.PACK_NAME || "\t   𓅋 vajira 𓃮 \n\nᴋɪss ʍᴇ...💋\n\nᴄʟօsᴇ ყσυɾ ᴇყᴇs...👁️🙈\n\nʍɪss ʍᴇ...♥️\n\n\n   -ᴘʟᴇᴀsᴇ ᴅᴏɴ'ᴛ ᴛᴀᴋᴇ 🚮 \n\n--- ρυвʟɪᴄ вσт нᴇʀᴇ ---" ,
-  autoreaction: process.env.AUTO_REACTION || 'false',  //  | 'cmd' | 'true' | 'all' |
+  autoreaction: process.env.AUTO_REACTION || 'true',  //  | 'cmd' | 'true' | 'all' |
   antibadword : process.env.ANTI_BAD_WORD || 'nobadwordokeyuntillYouPutAnWordHere',
   alwaysonline: process.env.WAPRESENCE || '', // 'unavailable' | 'available' | 'composing' | 'recording' | 'paused'
   antifake : 'null', // process.env.FAKE_COUNTRY_CODE ||'94',
-  readmessage: process.env.READ_MESSAGE || 'false',   //  | 'false' | 'true' | 
-  readcmds : process.env.READ_COMMANDS || 'false',    //  | 'false' | 'true' | 
+  readmessage: process.env.READ_MESSAGE || 'true',   //  | 'false' | 'true' | 
+  readcmds : process.env.READ_COMMANDS || 'true',    //  | 'false' | 'true' | 
   HANDLERS: process.env.PREFIX || ',',
   warncount : process.env.WARN_COUNT || 3,
   disablepm: process.env.DISABLE_PM || "false",   
   MsgsInLog:process.env.MSGS_IN_LOG ||'false',
   pmMsgsInLog:process.env.PM_MSGS_IN_LOGS ||'false',
-  levelupmessage: process.env.LEVEL_UP_MESSAGE || 'false',  //  | 'false' | 'true' | 
+  levelupmessage: process.env.LEVEL_UP_MESSAGE || 'true',  //  | 'false' | 'true' | 
   antilink_values: process.env.ANTILINK_VALUES || 'https://,chat.whatsapp.com',
   //antilinkaction: process.env.BRANCH || 'remove',
   BRANCH: process.env.BRANCH || 'main',
@@ -54,7 +54,7 @@ module.exports = {
   VERSION: process.env.VERSION || 'v.1.2.2',
   LANG: process.env.THEME ? process.env.THEME.toUpperCase() : 'VAJIRA',
   menu : process.env.MENU || '', /**  Available @MENU @Schemes 1: Aztec_Md, 2: A17_Md, 3: Vajira-Md Default ---------- If Not Choose then it Randomely Pic One Of Them Each time **/
-  WORKTYPE: process.env.WORKTYPE || process.env.MODE || 'privert',
+  WORKTYPE: process.env.WORKTYPE || process.env.MODE || 'public',
   KOYEB_API : process.env.KOYEB_API || ''
 };
 
